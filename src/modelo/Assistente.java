@@ -12,10 +12,9 @@ public class Assistente extends Pessoa {
 		this.tipo = tipo;
 	}
 
-	// Sobrescreve o metedo getInfo da classe Palestrante 
+	// Sobrescreve o metodo getInfo da classe Palestrante 
 	public String toString() {
 		return "Assistente de " + tipo + super.toString();													
 	}
-	
 	
 }

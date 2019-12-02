@@ -17,7 +17,7 @@ public class BancoAssistentes {
 	public void listar() {
 		int i = 0;
 		for (Assistente bancoAssistentes : listaAssistentes) {
-			System.out.println("Posi��o " + (i++) + " : " + bancoAssistentes.getNome());					
+			System.out.println("Posição " + (i++) + " : " + bancoAssistentes.getNome());					
 		}	
 	}
 	
@@ -40,4 +40,5 @@ public class BancoAssistentes {
 	public void mostrarTamanho(Assistente Assistente) {
 		System.out.println("Tamanho: " + listaAssistentes.size());
 	}
+	
 }
