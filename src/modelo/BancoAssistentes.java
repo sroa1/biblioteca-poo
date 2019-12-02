@@ -32,9 +32,10 @@ public class BancoAssistentes {
 	public void consultar(int posicao) { 	
 		System.out.println("Consulta de " + listaAssistentes.get(posicao));
 	}
+
 	public boolean verificarLista() {
 		return listaAssistentes.isEmpty();
-		}
+	}
 	
 	public void mostrarTamanho(Assistente Assistente) {
 		System.out.println("Tamanho: " + listaAssistentes.size());

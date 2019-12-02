@@ -10,34 +10,34 @@ public class BancoPalestrantes {
 		listaPalestrantes = new ArrayList<>();
 	}
 	
-	public void add(Palestrante palestrante) {		
+	public void adicionar(Palestrante palestrante) {		
 		listaPalestrantes.add(palestrante);			
 	}
 	
-	public void listaPalestrantes() {
+	public void listarPalestrantes() {
 		int i = 0;
 		for (Palestrante bancoPalestrantes : listaPalestrantes) {
-				System.out.println("Posição " + (i++) + " : " + bancoPalestrantes.getNome());					
+				System.out.println("Posiï¿½ï¿½o " + (i++) + " : " + bancoPalestrantes.getNome());					
 		}	
 	}
 	
-	public void editar(int x, Palestrante palestrante) {
-		listaPalestrantes.set(x, palestrante);
+	public void editar(int posicao, Palestrante palestrante) {
+		listaPalestrantes.set(posicao, palestrante);
 	}
 	
-	public void remover(Palestrante palestrante, int y) {
-		listaPalestrantes.remove(y);
+	public void remover(int posicao) {
+		listaPalestrantes.remove(posicao);
 	}
 	
-	public void consultar(int z) { 	
-		System.out.println("Consulta de " + listaPalestrantes.get(z));
+	public void consultar(int posicao) { 	
+		System.out.println("Consulta de " + listaPalestrantes.get(posicao));
 	}
 	
-	public boolean isEmpty() {
+	public boolean verificarLista() {
 		return listaPalestrantes.isEmpty();
 	}
 	
-	public void size(Palestrante palestrante) {
+	public void mostrarTamanho(Palestrante palestrante) {
 		System.out.println("Tamanho: " + listaPalestrantes.size());
 	}
 	
