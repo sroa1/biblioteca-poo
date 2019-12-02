@@ -2,34 +2,33 @@ package modelo;
 
 public class Palestrante extends Pessoa {
 	private String descricao;
-	private int anosExp;
+	private int anosExperiencia;
 	// Contrutor com o super de pessoa 
-	public Palestrante(String nome, String genero, int idade, String descricao, int anosExp) {
+	public Palestrante(String nome, String genero, int idade, String descricao, int anosExperiencia) {
 		super(nome, genero, idade);
 		this.descricao = descricao;
-		this.anosExp = anosExp;
+		this.anosExperiencia = anosExperiencia;
 	}
 	// Faz uma sobrecarga no construtor da classe Palestrante 
 	public Palestrante(String nome, String genero, int idade) {
 		super(nome, genero, idade);
 	}	
 	
-	public void setDescricao(String descricao) {
+	public void setarDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	public void setAnosExp(int anosExp) {
-		this.anosExp = anosExp;
+	public void setarAnosExperiencia(int anosExperiencia) {
+		this.anosExperiencia = anosExperiencia;
 	}
 	// Faz uma sobrescrita no metodo getInfo da classe Pessoa 
 	public String getInfo() {
 		return "\nPalestrante" + super.getInfo() 
-									+ "\nDescri��o: " + descricao 
-										+ "\nAnos de experi�ncia: " + anosExp + "\n";
+									+ "\nDescrição: " + descricao 
+										+ "\nAnos de experiência: " + anosExperiencia + "\n";
 	}
 	@Override
 	public String toString() {
-		return "Palestrante" + super.toString()+"descricao=" + descricao + ", anosExp=" + anosExp + "]";
+		return "Palestrante" + super.toString()+"Descrição=" + descricao + ", Anos de experiência=" + anosExperiencia + "]";
 	}
-	
 	
 }
