@@ -7,7 +7,7 @@ import modelo.BancoAssistentes;
 import modelo.BancoPalestrantes;
 import modelo.Palestrante;
 
-public class Executar {
+public class Aplicacao {
 
 	public static void main(String[] args) {
 		Menu();
@@ -26,7 +26,7 @@ public class Executar {
 		int op = 0;
 		do {
 			System.out.println("-------------------------------------");
-			System.out.println("Escolha uma das opções abaixo!");
+			System.out.println("Escolha uma das opï¿½ï¿½es abaixo!");
 			System.out.println("-------------------------------------");
 			System.out.println("(1)-- Palestrantes");
 			System.out.println("(2)-- Lista de Palestrantes");
@@ -38,7 +38,7 @@ public class Executar {
 
 			if (opcao == 1) {
 				System.out.println("---------------------------------------");
-				System.out.println("Escolha um sub-opcão a seguir!");
+				System.out.println("Escolha um sub-opcï¿½o a seguir!");
 				System.out.println("---------------------------------------");
 				System.out.println("(1)-- Criar um palestrante");
 				System.out.println("(2)-- Consultar dados de um Palestrante");
@@ -52,8 +52,8 @@ public class Executar {
 
 					if (subOpcao == 1) {
 						System.out.println("-------------------------------------------------------------");
-						System.out.println("Escolha o tipo de criação de palestrante");
-						System.out.println("(1)-- Nome/Genero/Idade/Descrição/Anos no mercado de trabalho");
+						System.out.println("Escolha o tipo de criaï¿½ï¿½o de palestrante");
+						System.out.println("(1)-- Nome/Genero/Idade/Descriï¿½ï¿½o/Anos no mercado de trabalho");
 						System.out.println("(2)-- Nome/Genero/Idade");
 						System.out.println("-------------------------------------------------------------");
 						opcao2 = sc.nextInt();
@@ -70,10 +70,10 @@ public class Executar {
 							System.out.println("Idade: ");
 							palestrante.setIdade(sc.nextInt());
 							System.out.println("---------------------");
-							System.out.println("Descriçao: ");
+							System.out.println("Descriï¿½ao: ");
 							palestrante.setDescricao(sc.next());
 							System.out.println("---------------------");
-							System.out.println("Anos de experiência no mercado de trabalho: ");
+							System.out.println("Anos de experiï¿½ncia no mercado de trabalho: ");
 							palestrante.setAnosExp(sc.nextInt());
 						
 							//banco 
@@ -105,7 +105,7 @@ public class Executar {
 					else if (subOpcao == 2) {
 						if(banco.isEmpty()) {
 							System.out.println("-------------------------------------");
-							System.out.println("Não tem Palestrantes ainda!");
+							System.out.println("Nï¿½o tem Palestrantes ainda!");
 							System.out.println("-------------------------------------");
 							subOpcao = 0;
 						}else {
@@ -124,12 +124,12 @@ public class Executar {
 
 					else if (subOpcao == 3) {										
 						if (banco.isEmpty()) {
-							System.out.println("Não há palestrantes para editar");
+							System.out.println("Nï¿½o hï¿½ palestrantes para editar");
 						} 				
 						else {
 							System.out.println("-------------------------------------------------------------");
-							System.out.println("Escolha o novo tipo de edição de palestrante");
-							System.out.println("(1)-- Nome/Genero/Idade/Descrição/Anos no mercado de trabalho");
+							System.out.println("Escolha o novo tipo de ediï¿½ï¿½o de palestrante");
+							System.out.println("(1)-- Nome/Genero/Idade/Descriï¿½ï¿½o/Anos no mercado de trabalho");
 							System.out.println("(2)-- Nome/Genero/Idade");
 							System.out.println("-------------------------------------------------------------");
 							op = sc.nextInt();
@@ -145,10 +145,10 @@ public class Executar {
 								System.out.println("Idade: ");
 								palestrante.setIdade(sc.nextInt());
 								System.out.println("---------------------");
-								System.out.println("Descriçao: ");
+								System.out.println("Descriï¿½ao: ");
 								palestrante.setDescricao(sc.next());
 								System.out.println("---------------------");
-								System.out.println("Anos de experiência no mercado de trabalho: ");
+								System.out.println("Anos de experiï¿½ncia no mercado de trabalho: ");
 								palestrante.setAnosExp(sc.nextInt());
 								System.out.println("Agora escolha a posicao que ele vai substituir");
 								banco.editar(sc.nextInt(), palestrante);
@@ -179,12 +179,12 @@ public class Executar {
 					else if (subOpcao == 4) {
 						if (banco.isEmpty()) {
 							System.out.println("---------------------------------");
-							System.out.println("Não há palestrantes para remover!");
+							System.out.println("Nï¿½o hï¿½ palestrantes para remover!");
 							System.out.println("---------------------------------");
 							subOpcao = 0;
 						} else {
 							System.out.println("--------------------------------------------------");
-							System.out.println("Digite a posição que deseja remover o palestrante.");
+							System.out.println("Digite a posiï¿½ï¿½o que deseja remover o palestrante.");
 							banco.listaPalestrantes();
 							System.out.println("--------------------------------------------------");
 							banco.remover(palestrante, sc.nextInt());
@@ -199,7 +199,7 @@ public class Executar {
 
 				if (banco.isEmpty()) {
 					System.out.println("--------------------------------");
-					System.out.println("Não há palestrantes nessa lista!");
+					System.out.println("Nï¿½o hï¿½ palestrantes nessa lista!");
 					System.out.println("--------------------------------");
 					System.out.println();
 					subOpcao = 0;
@@ -214,7 +214,7 @@ public class Executar {
 				}
 			} else if (opcao == 3) {
 				System.out.println("-------------------------------------");
-				System.out.println("Escolha um sub-opcão a seguir!");
+				System.out.println("Escolha um sub-opcï¿½o a seguir!");
 				System.out.println("-------------------------------------");
 				System.out.println("(1)-- Criar um Assistente");
 				System.out.println("(2)-- Consultar dados de um Assistente");
@@ -243,7 +243,7 @@ public class Executar {
 						assistente.setTipo(sc.next());
 						System.out.println("---------------------");
 						
-						// Guarda o obj assistente para que não seja rescrito
+						// Guarda o obj assistente para que nï¿½o seja rescrito
 						banco2.add(assistente);
 						System.out.println("Assistente criado!S");
 						System.out.println("---------------------");
@@ -253,7 +253,7 @@ public class Executar {
 					else if (subOpcao == 2) {
 						if(banco2.isEmpty()) {
 							System.out.println("-------------------------------------");
-							System.out.println("Não tem assistentes ainda!");
+							System.out.println("Nï¿½o tem assistentes ainda!");
 							System.out.println("-------------------------------------");
 							subOpcao = 0;
 						}else {
@@ -272,7 +272,7 @@ public class Executar {
 					else if (subOpcao == 3) {
 
 						if (banco2.isEmpty()) {
-							System.out.println("A lista de Assistentes está vazia, adicione um antes de usar essa opção.");
+							System.out.println("A lista de Assistentes estï¿½ vazia, adicione um antes de usar essa opï¿½ï¿½o.");
 							subOpcao = 0;
 						} else {														
 							banco2.listAssistentes();
@@ -298,11 +298,11 @@ public class Executar {
 					else if (subOpcao == 4) {
 						if (banco2.isEmpty()) {
 							System.out.println("-------------------------------------");
-							System.out.println("Não há assistentes para remover!");
+							System.out.println("Nï¿½o hï¿½ assistentes para remover!");
 							System.out.println("-------------------------------------");
 							subOpcao = 0;
 						} else {
-							System.out.println("Digite a posição que deseja remover o assistente.");
+							System.out.println("Digite a posiï¿½ï¿½o que deseja remover o assistente.");
 							banco2.listAssistentes();
 							System.out.println("-------------------------------------");
 							banco2.remover(assistente, sc.nextInt());
@@ -316,7 +316,7 @@ public class Executar {
 				
 				if (banco2.isEmpty()) {
 					System.out.println("-------------------------------------");
-					System.out.println("A lista de assistentes está vazia");
+					System.out.println("A lista de assistentes estï¿½ vazia");
 					System.out.println("-------------------------------------");
 					subOpcao =0;
 				} else {

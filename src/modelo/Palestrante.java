@@ -23,8 +23,8 @@ public class Palestrante extends Pessoa {
 	// Faz uma sobrescrita no metodo getInfo da classe Pessoa 
 	public String getInfo() {
 		return "\nPalestrante" + super.getInfo() 
-									+ "\nDescrição: " + descricao 
-										+ "\nAnos de experiência: " + anosExp + "\n";
+									+ "\nDescriï¿½ï¿½o: " + descricao 
+										+ "\nAnos de experiï¿½ncia: " + anosExp + "\n";
 	}
 	@Override
 	public String toString() {

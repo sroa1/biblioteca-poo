@@ -10,33 +10,33 @@ public class BancoAssistentes {
 		listaAssistentes = new ArrayList<>();
 	}
 	
-	public void add(Assistente assistente) {		
-			listaAssistentes.add(assistente);			
+	public void adicionar(Assistente assistente) {		
+		listaAssistentes.add(assistente);			
 	}
 	
-	public void listAssistentes() {
+	public void listar() {
 		int i = 0;
 		for (Assistente bancoAssistentes : listaAssistentes) {
-				System.out.println("Posição " + (i++) + " : " + bancoAssistentes.getNome());					
+			System.out.println("Posiï¿½ï¿½o " + (i++) + " : " + bancoAssistentes.getNome());					
 		}	
 	}
 	
-	public void editar(Assistente assistente, int x) {
-		listaAssistentes.set(x, assistente);
+	public void editar(int posicao, Assistente assistente) {
+		listaAssistentes.set(posicao, assistente);
 	}
 	
-	public void remover(Assistente assistente, int x) {
-		listaAssistentes.remove(x);
+	public void remover(int posicao) {
+		listaAssistentes.remove(posicao);
 	}
 	
-	public void consultar(int z) { 	
-		System.out.println("Consulta de " + listaAssistentes.get(z));
+	public void consultar(int posicao) { 	
+		System.out.println("Consulta de " + listaAssistentes.get(posicao));
 	}
-	public boolean isEmpty() {
+	public boolean verificarLista() {
 		return listaAssistentes.isEmpty();
 		}
 	
-	public void size(Assistente Assistente) {
+	public void mostrarTamanho(Assistente Assistente) {
 		System.out.println("Tamanho: " + listaAssistentes.size());
 	}
 }

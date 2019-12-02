@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Aplicacao",
+            "request": "launch",
+            "mainClass": "principal.Aplicacao",
+            "projectName": "ProjetoPoo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Executar",
+            "request": "launch",
+            "mainClass": "principal.Executar",
+            "projectName": "ProjetoPoo"
+        }
+    ]
+}
