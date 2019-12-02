@@ -1,4 +1,4 @@
-package principal;
+package teste;
 
 
 import modelo.Assistente;
